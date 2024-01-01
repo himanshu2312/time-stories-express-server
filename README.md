@@ -17,7 +17,7 @@ This Express Application server fetches Time.com and returns the latest top 6 st
 We can use this API directly in our project just like any other API.
 
 - **Method** -> GET
-- **URL** -> API/getTimeStories {replace 'API' with API's URL mentioned above}
+- **Endpoint URL** -> API/getTimeStories {replace 'API' with API's URL mentioned above} or you can direct hit this endpoint [getTimeStories](https://time-stories-2312.onrender.com/getTimeStories)
 - **Body & Parameters** -> There's no need to add anything 
 
 ## NOTE:
