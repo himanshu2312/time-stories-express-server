@@ -2,7 +2,7 @@
 
 [Time Story Server](https://time-stories-2312.onrender.com/)
 
-# Stack Overflow Express Server
+# Time Stories Express Server
 
 This Express Application server fetches Time.com and returns the latest top 6 stories in a response array.
 
