@@ -4,7 +4,7 @@
 
 # Stack Overflow Express Server
 
-This server is an Express Application that fetches Time.com and returns latest top 6 stories in a response array.
+This Express Application server fetches Time.com and returns the latest top 6 stories in a response array.
 
 ## Technologies used:
 
@@ -14,13 +14,13 @@ This server is an Express Application that fetches Time.com and returns latest t
 
 ## How to use?
 
-We can use this API directly our project just like any other APIs.
+We can use this API directly in our project just like any other API.
 
-Method : GET
-URL : API/getTimeStories {replace 'API' with API's url mentioned above}
-Body & Parameters : There's no need to add anything 
+- **Method** -> GET
+- **URL** -> API/getTimeStories {replace 'API' with API's URL mentioned above}
+- **Body & Parameters** -> There's no need to add anything 
 
 ## NOTE:
-This API may take some time for first time to give response as it is hosted on an unpaid platform.
+This API may take some time for the first time to give a response as it is hosted on an unpaid platform.
 
 Made by [@Himanshu](https://www.linkedin.com/in/himanshu2312/)
