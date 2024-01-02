@@ -1,21 +1,26 @@
-import express from "express";
-// import https from "https"
-import {getStories} from './scraper.js';
+import http from "http"
+import { getStories } from './scraper.js';
 
-const app = express();
-const PORT = process.env.PORT || 3000
-
-app.get("/getTimeStories", async (req, res) => {
-      try {
-            const stories = await getStories();
-            res.json(stories);
-      } catch (error) {
-            console.error('Error:', error.message);
-            res.status(500).json({ error: 'Internal Server Error' });
+const app = http.createServer(async (req, res) => {
+      if (req.url === '/getTimeStories' && req.method === 'GET') {
+            try {
+                  const stories = await getStories();
+                  res.writeHead(200, { 'Content-Type': 'application/json' });
+                  res.end(JSON.stringify(stories));
+            }
+            catch (error) {
+                  console.error('Error:', error.message);
+                  res.writeHead(500, { 'Content-Type': 'application/json' });
+                  res.end(JSON.stringify({ error: 'Internal Server Error' }));
+            }
+      } else {
+            res.writeHead(404, { 'Content-Type': 'text/plain' });
+            res.end('Not Found');
       }
-})
+});
 
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
-      console.log(`This server is running on port : ${PORT}`);
-})
+      console.log(`This server is running on http://localhost:${PORT}`);
+});

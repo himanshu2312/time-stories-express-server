@@ -4,12 +4,11 @@
 
 # Stack Overflow Express Server
 
-This Express Application server fetches Time.com and returns the latest top 6 stories in a response array.
+This Node Application is an http server that fetches Time.com and returns the latest top 6 stories in a response array.
 
 ## Technologies used:
 
 - Node js
-- Express js
 - Nodemon
 
 ## How to use?
