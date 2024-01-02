@@ -2,7 +2,7 @@
 
 [Time Story Server](https://time-stories-2312.onrender.com/)
 
-# Stack Overflow Express Server
+# Time Stories Express Server
 
 This Node Application is an http server that fetches Time.com and returns the latest top 6 stories in a response array.
 
@@ -16,7 +16,7 @@ This Node Application is an http server that fetches Time.com and returns the la
 We can use this API directly in our project just like any other API.
 
 - **Method** -> GET
-- **URL** -> API/getTimeStories {replace 'API' with API's URL mentioned above}
+- **Endpoint URL** -> API/getTimeStories {replace 'API' with API's URL mentioned above} or you can direct hit this endpoint [getTimeStories](https://time-stories-2312.onrender.com/getTimeStories)
 - **Body & Parameters** -> There's no need to add anything 
 
 ## NOTE:
