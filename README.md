@@ -9,6 +9,7 @@ This Node Application is an HTTP server that fetches Time.com and returns the la
 - Nodemon
 - Javascript
 - ES6 Module
+- Visual Studio Code
 
 ## How to use?
 We can use this API directly in our project just like any other API.
