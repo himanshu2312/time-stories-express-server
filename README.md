@@ -1,18 +1,16 @@
 ## Live Link for the API:
-
 [Time Story Server](https://time-stories-2312.onrender.com/)
 
 # Time Stories Node Server
-
 This Node Application is an HTTP server that fetches Time.com and returns the latest top 6 stories in a response array.
 
-## Technologies used:
-
-- Node js
+## Technologies and Tools used:
+- NodeJs
 - Nodemon
+- Javascript
+- ES6 Module
 
 ## How to use?
-
 We can use this API directly in our project just like any other API.
 
 - **Method** -> GET
